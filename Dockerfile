@@ -18,8 +18,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Copy requirements file
 COPY requirements.txt .
 
-# Create a non-root user
-RUN useradd -m -u 1000 user
+# Create a non-root user and ensure permissions
+RUN useradd -m -u 1000 user && \
+    chown -R user:user /app
 USER user
 ENV HOME=/home/user \
     PATH=/home/user/.local/bin:$PATH
@@ -27,7 +28,7 @@ ENV HOME=/home/user \
 # Install Python dependencies
 # Use --user to install in home directory for non-root user
 RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir torch>=2.0.0 --index-url https://download.pytorch.org/whl/cpu && \
+    pip install --no-cache-dir "torch>=2.0.0" --index-url https://download.pytorch.org/whl/cpu && \
     pip install --no-cache-dir -r requirements.txt
 
 # Copy application code with ownership
