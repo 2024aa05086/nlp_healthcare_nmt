@@ -1,0 +1,64 @@
+{
+  "en": {
+    "hypertension": {
+      "fr": "hypertension",
+      "es": "hipertensión",
+      "de": "Hypertonie",
+      "definition": "High blood pressure"
+    },
+    "diabetes": {
+      "fr": "diabète",
+      "es": "diabetes",
+      "de": "Diabetes",
+      "definition": "Metabolic disorder characterized by high blood sugar"
+    },
+    "antibiotic": {
+      "fr": "antibiotique",
+      "es": "antibiótico",
+      "de": "Antibiotikum",
+      "definition": "Medication that inhibits bacterial growth"
+    },
+    "analgesic": {
+      "fr": "analgésique",
+      "es": "analgésico",
+      "de": "Analgetikum",
+      "definition": "Pain reliever medication"
+    },
+    "diagnosis": {
+      "fr": "diagnostic",
+      "es": "diagnóstico",
+      "de": "Diagnose",
+      "definition": "Identification of a disease or condition"
+    },
+    "symptom": {
+      "fr": "symptôme",
+      "es": "síntoma",
+      "de": "Symptom",
+      "definition": "Sign or indication of a disease"
+    },
+    "treatment": {
+      "fr": "traitement",
+      "es": "tratamiento",
+      "de": "Behandlung",
+      "definition": "Medical care for illness or injury"
+    },
+    "prescription": {
+      "fr": "ordonnance",
+      "es": "receta",
+      "de": "Rezept",
+      "definition": "Written order for medication"
+    },
+    "dosage": {
+      "fr": "posologie",
+      "es": "dosificación",
+      "de": "Dosierung",
+      "definition": "Amount and frequency of medication"
+    },
+    "monitor": {
+      "fr": "surveiller",
+      "es": "monitorear",
+      "de": "überwachen",
+      "definition": "To observe or check regularly"
+    }
+  }
+}

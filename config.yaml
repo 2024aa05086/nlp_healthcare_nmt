@@ -1,0 +1,35 @@
+# Configuration for Healthcare NMT System
+model:
+  default_model: "Helsinki-NLP/opus-mt-en-fr"
+  available_models:
+    - "Helsinki-NLP/opus-mt-en-fr"
+    - "Helsinki-NLP/opus-mt-en-es"
+    - "Helsinki-NLP/opus-mt-en-de"
+    - "facebook/m2m100_418M"
+  
+  generation:
+    max_length: 512
+    num_beams: 4
+    temperature: 0.7
+    do_sample: false
+    length_penalty: 1.0
+    repetition_penalty: 1.0
+
+evaluation:
+  bleu:
+    tokenize: "13a"
+    effective_order: 4
+    smooth_method: "exp"
+  
+  ngram:
+    max_n: 4
+
+ui:
+  port: 7860
+  share: false
+  debug: false
+  theme: "soft"
+
+healthcare:
+  terminology_file: "data/healthcare_terms.json"
+  sample_texts_file: "data/sample_medical_texts.json"

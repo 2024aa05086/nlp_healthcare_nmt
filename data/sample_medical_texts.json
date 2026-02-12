@@ -1,0 +1,42 @@
+{
+  "Medical Instructions": {
+    "text": "Take one tablet twice daily with food. Do not exceed the recommended dosage.",
+    "references": {
+      "fr": ["Prenez un comprimé deux fois par jour avec de la nourriture. Ne dépassez pas la dose recommandée."],
+      "es": ["Tome una tableta dos veces al día con alimentos. No exceda la dosis recomendada."],
+      "de": ["Nehmen Sie eine Tablette zweimal täglich mit Nahrung ein. Überschreiten Sie nicht die empfohlene Dosierung."]
+    }
+  },
+  "Diagnosis Report": {
+    "text": "Patient presents with symptoms of acute bronchitis, including persistent cough and wheezing.",
+    "references": {
+      "fr": ["Le patient présente des symptômes de bronchite aiguë, notamment une toux persistante et une respiration sifflante."],
+      "es": ["El paciente presenta síntomas de bronquitis aguda, incluyendo tos persistente y sibilancias."],
+      "de": ["Der Patient zeigt Symptome einer akuten Bronchitis, einschließlich anhaltendem Husten und Keuchen."]
+    }
+  },
+  "Prescription": {
+    "text": "Prescribe amoxicillin 500mg three times daily for seven days to treat bacterial infection.",
+    "references": {
+      "fr": ["Prescrire de l'amoxicilline 500 mg trois fois par jour pendant sept jours pour traiter l'infection bactérienne."],
+      "es": ["Recetar amoxicilina 500 mg tres veces al día durante siete días para tratar la infección bacteriana."],
+      "de": ["Verschreiben Sie Amoxicillin 500 mg dreimal täglich für sieben Tage zur Behandlung der bakteriellen Infektion."]
+    }
+  },
+  "Discharge Summary": {
+    "text": "The patient was admitted with chest pain and diagnosed with unstable angina. Monitor vital signs regularly.",
+    "references": {
+      "fr": ["Le patient a été admis avec des douleurs thoraciques et diagnostiqué avec une angine instable. Surveillez les signes vitaux régulièrement."],
+      "es": ["El paciente fue admitido con dolor torácico y diagnosticado con angina inestable. Monitoree los signos vitales regularmente."],
+      "de": ["Der Patient wurde mit Brustschmerzen aufgenommen und mit instabiler Angina diagnostiziert. Überwachen Sie regelmäßig die Vitalzeichen."]
+    }
+  },
+  "Clinical Note": {
+    "text": "Patient reports dizziness and blurred vision. Blood pressure reading is 150/95 mmHg. Consider antihypertensive medication.",
+    "references": {
+      "fr": ["Le patient signale des vertiges et une vision floue. La tension artérielle est de 150/95 mmHg. Envisagez un traitement antihypertenseur."],
+      "es": ["El paciente informa mareos y visión borrosa. La lectura de la presión arterial es 150/95 mmHg. Considere medicación antihipertensiva."],
+      "de": ["Der Patient berichtet über Schwindel und verschwommenes Sehen. Der Blutdruckwert beträgt 150/95 mmHg. Erwägen Sie eine antihypertensive Medikation."]
+    }
+  }
+}
