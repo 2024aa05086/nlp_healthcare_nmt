@@ -18,11 +18,20 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Copy requirements file
 COPY requirements.txt .
 
-# Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+# Create a non-root user
+RUN useradd -m -u 1000 user
+USER user
+ENV HOME=/home/user \
+    PATH=/home/user/.local/bin:$PATH
 
-# Copy application code
-COPY . .
+# Install Python dependencies
+# Use --user to install in home directory for non-root user
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir torch>=2.0.0 --index-url https://download.pytorch.org/whl/cpu && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Copy application code with ownership
+COPY --chown=user:user . .
 
 # Expose port used by Gradio
 EXPOSE 7860
