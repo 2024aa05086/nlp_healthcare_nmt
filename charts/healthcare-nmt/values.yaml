@@ -15,9 +15,10 @@ podSecurityContext: {}
 securityContext: {}
 
 service:
-  type: ClusterIP
+  type: NodePort
   port: 7860
   targetPort: 7860
+  nodePort: 30007
 
 resources: {}
 
